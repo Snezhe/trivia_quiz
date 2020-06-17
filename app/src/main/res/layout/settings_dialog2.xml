@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/language_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/languages_title"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/mk"
+        android:layout_width="40dp"
+        android:layout_height="29.5dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/language_title"
+        android:background="@drawable/mk"
+        android:contentDescription="@string/todo12" />
+
+    <ImageButton
+        android:id="@+id/en"
+        android:layout_width="30dp"
+        android:layout_height="28.5dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/mk"
+        android:background="@drawable/en"
+        android:contentDescription="@string/todo13" />
+
+    <TextView
+        android:id="@+id/logout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/logout"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/logout_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/logout_title"
+        android:background="@drawable/ic_exit_to_app_black_24dp"
+        android:onClick="openSettings2"
+        android:contentDescription="@string/todo11" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D92961">
+
+    <TextView
+        android:id="@+id/trivia_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/trivia_quiz_title"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="110sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="@string/username"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trivia_title" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@string/todo7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button5"
+        android:drawableTop="@drawable/ic_play_circle_filled_black_24dp"
+        android:padding="3dp"
+        android:text="@string/play"
+        android:textAlignment="center"
+        android:textColor="#D92961"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+
+    <Button
+        android:id="@+id/world_rank_button"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button5"
+        android:drawableTop="@drawable/ic_business_black_24dp"
+        android:padding="3dp"
+        android:text="@string/world_rank"
+        android:textAlignment="center"
+        android:textColor="#D92961"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_game_button" />
+
+    <TextView
+        android:id="@+id/suggest_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/suggest"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/world_rank_button" />
+
+    <ImageButton
+        android:id="@+id/openSettings_Button2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ic_settings_black_24dp2"
+        android:contentDescription="@string/todo3"
+        android:onClick="openSettings2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/world_rank_button"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <ImageButton
+        android:id="@+id/openFragment"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/ic_baseline_info_24"
+        android:contentDescription="@string/todo3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/world_rank_button"
+        app:layout_constraintVertical_bias="0.917" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/language_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/languages_title"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/mk"
+        android:layout_width="40dp"
+        android:layout_height="29.5dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/language_title"
+        android:background="@drawable/mk"
+        android:contentDescription="@string/todo19" />
+
+    <ImageButton
+        android:id="@+id/en"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/mk"
+        android:background="@drawable/en"
+        android:contentDescription="@string/todo18" />
+
+</RelativeLayout>
